@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>PBS Order Tracker</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<h1>PBS Order Tracker</h1>
+	</header>
+
+	<main>
+		<table>
+			<thead>
+				<tr>
+					<th>Order Number</th>
+					<th>Status</th>
+				</tr>
+			</thead>
+			<tbody id="ordersTableBody">
+				<!-- Orders will be dynamically added here -->
+			</tbody>
+		</table>
+
+		<form id="addOrderForm">
+			<label for="orderNumberInput">Order Number:</label>
+			<input type="text" id="orderNumberInput" name="orderNumberInput">
+			<button type="submit">Add Order</button>
+		</form>
+
+		<form id="removeOrderForm">
+			<label for="removeOrderInput">Order Number:</label>
+			<input type="text" id="removeOrderInput" name="removeOrderInput">
+			<button type="submit">Remove Order</button>
+		</form>
+
+		<button id="generateReportButton">Generate Daily Report</button>
+	</main>
+
+	<script src="script.js"></script>
+</body>
+</html>
